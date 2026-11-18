@@ -2,8 +2,8 @@ import { APIRequestContext } from '@playwright/test';
 import {
     LoginRequest,
     RegisterRequest,
-} from '../../data/backend/auth-model';
-import { AUTH_ENDPOINTS } from '../endpoints/auth/auth-endpoints';
+} from '../../../data/backend/auth/auth-model';
+import { AUTH_ENDPOINTS } from '../../endpoints/auth/auth-endpoints';
 
 export class AuthApiService {
     constructor(private request: APIRequestContext) { }
