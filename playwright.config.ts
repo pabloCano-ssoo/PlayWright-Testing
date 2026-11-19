@@ -5,7 +5,7 @@ export default defineConfig({
   fullyParallel: true,
   reporter: 'html',
   use: {
-    baseURL: 'https://www.saucedemo.com',
+    baseURL: 'https://testyard.onrender.com',
     trace: 'on-first-retry',
   },
 
