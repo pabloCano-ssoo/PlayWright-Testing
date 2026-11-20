@@ -1,6 +1,6 @@
 import {
-    CreateNoteRequest,
-    UpdateNoteRequest,
+  CreateNoteRequest,
+  UpdateNoteRequest,
 } from './note-model';
 
 export const NOTE_VALID_DATA: CreateNoteRequest = {
@@ -17,9 +17,3 @@ export const NOTE_UPDATE_DATA: UpdateNoteRequest = {
   completed: true,
 };
 
-export const NOTE_EXPECTED_DATA = {
-  createStatusCode: 201,
-  getStatusCode: 200,
-  updateStatusCode: 200,
-  deleteStatusCode: 200,
-};

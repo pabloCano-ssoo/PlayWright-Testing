@@ -1,11 +1,11 @@
 import { APIRequestContext } from '@playwright/test';
-import { NOTE_ENDPOINTS } from '../endpoints/notes/notes-endpoints';
+import { NOTE_ENDPOINTS } from '../../endpoints/notes/notes-endpoints';
 
 import {
     CreateNoteRequest,
     PatchNoteRequest,
     UpdateNoteRequest,
-} from '../../data/backend/note-model';
+} from '../../../data/backend/notes/note-model';
 
 export class NoteApiService {
     constructor(private request: APIRequestContext) { }
