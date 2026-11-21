@@ -1,14 +1,18 @@
 {
   "name": "playwright",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "npx playwright test",
-    "test:frontend": "npx playwright test --project=frontend",
-    "test:backend": "npx playwright test --project=backend",
-    "test:integration": "npx playwright test --project=integration",
-    "test:headed": "npx playwright test --headed",
-    "test:report": "npx playwright show-report"
+    "test": "playwright test",
+    "test:frontend": "playwright test --project=frontend-chromium --project=frontend-firefox --project=frontend-webkit",
+    "test:frontend:chromium": "playwright test --project=frontend-chromium",
+    "test:frontend:firefox": "playwright test --project=frontend-firefox",
+    "test:frontend:webkit": "playwright test --project=frontend-webkit",
+    "test:backend": "playwright test --project=backend",
+    "test:integration": "playwright test --project=integration",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
   },
   "keywords": [],
   "author": "",
