@@ -156,3 +156,9 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Local Copilot agent profiles
+/.github/agents/
+
+# Openapi
+openapi.json
